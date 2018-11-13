@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Chat
  *
  * @ORM\Table(name="chat", indexes={@ORM\Index(name="partie_id", columns={"partie_id"}), @ORM\Index(name="utilisateur_id", columns={"utilisateur_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\ChatRepository")
  */
 class Chat
 {
